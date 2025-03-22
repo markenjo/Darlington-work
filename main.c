@@ -1,18 +1,76 @@
-#include <stdio.h>
-#include <stdlib.h>
 
-int main()
-{
-    char n[40];
-     printf("Please enter domestic animals:");
-     scanf("%s",&n);
 
-     char m[30];
-     printf("Please enter wild animals:");
-     scanf("%s",&m);
+void Physics(){
 
-     char k[70]="n+m";
-     printf("The group of n and m is %s,%s",n,m);
+int num_a,num_b,num_c,num_d;
 
-    return 0;
+printf("Please enter the marks for Beginning of term:",num_a);
+scanf("%d",&num_a);
+
+printf("Please enter the marks for Midterm:",num_b);
+scanf("%d",&num_b);
+
+printf("Please enter the marks for coursework:",num_c);
+scanf("%d",&num_c);
+
+printf("Please enter the marks for End of term:",num_d);
+scanf("%d",&num_d);
+
+int s=num_a+num_b+num_c+num_d;
+
+ float average=s/4.0;
+ printf("The average of physics:%.2f\n",average);
+
+}
+
+void Chemistry(){
+int num_a,num_b,num_c,num_d;
+
+printf("Please enter the marks for Beginning of term:",num_a);
+scanf("%d",&num_a);
+
+printf("Please enter the marks for Midterm:",num_b);
+scanf("%d",&num_b);
+
+printf("Please enter the marks for coursework:",num_c);
+scanf("%d",&num_c);
+
+printf("Please enter the marks for End of term:",num_d);
+scanf("%d",&num_d);
+
+int s=num_a+num_b+num_c+num_d;
+
+ float average=s/4.0;
+ printf("The average of chemistry:%.2f\n",average);
+
+}
+
+void Maths(){
+int num_a,num_b,num_c,num_d;
+
+printf("Please enter the marks for Beginning of term:",num_a);
+scanf("%d",&num_a);
+
+printf("Please enter the marks for Midterm:",num_b);
+scanf("%d",&num_b);
+
+printf("Please enter the marks for coursework:",num_c);
+scanf("%d",&num_c);
+
+printf("Please enter the marks for End of term:",num_d);
+scanf("%d",&num_d);
+
+int s=num_a+num_b+num_c+num_d;
+
+ float average=s/4.0;
+ printf("The average of maths:%.2f\n",average);
+
+}
+
+int main(){
+Physics();
+Chemistry();
+Maths();
+
+return 0;
 }
